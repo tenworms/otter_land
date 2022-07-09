@@ -6,11 +6,13 @@ RSpec.describe ' Park Index' do
     otterkingdom = Park.create!(title: 'Otter Kingdom', hiring_workers: false, number_of_workers: 20)
     otterworld = Park.create!(title: 'Otter World', hiring_workers: true, number_of_workers: 4)
 
-    visit "/parks/"
+
+    visit "/parks"
 
     expect(page).to have_content(otterland.title)
-    expect(page).to_not have_content(otterkingdom.title)
-    expect(page).to_not have_content(otterworld.title)
+    expect(page).to have_content(otterkingdom.title)
+    expect(page).to have_content(otterworld.title)
+
   end
 
 end
