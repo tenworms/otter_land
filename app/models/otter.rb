@@ -1,0 +1,4 @@
+class Otter < ApplicationRecord
+
+
+end 
