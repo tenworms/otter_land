@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/parks/:id', to: 'parks#show'
   get '/otters', to: 'otters#index'
   get '/otters/:id', to: 'otters#show'
+  get '/parks/:park_id/otters', to: 'park_otters#index'
 end
