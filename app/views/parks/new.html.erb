@@ -1,0 +1,10 @@
+<%= form_with url: "/parks", method: :post, local: true do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <%= form.label :hiring_workers %>
+  <%= form.select :hiring_workers, [['yes', true], ['no', false]] %>
+  <%= form.label :number_of_workers  %>
+  <%= form.number_field :number_of_workers %>
+  <%= form.submit 'Create Park' %>
+
+<% end %>

@@ -1,5 +1,13 @@
+<p><a href="/parks"> Parks</a></p>
+<p><a href="/otters"> Otters Index</a></p>
+
+<p><%= link_to "#{@park.title} otters", "/parks/#{@park.id}/otters" %></p>
+
+<p><a href="/parks/<%="#{@park.id}"%>/otters">Otters</a></p>
+
 <h1><%= @park.title %></h1>
 <p>Hiring Workers: <%= @park.hiring_workers %></p>
 <p>Number of Workers: <%= @park.number_of_workers %></p>
+<p>This Park has <%= @park.otters.count %> otters</p>
 <p>Created At: <%= @park.created_at %></p>
 <p>Updated At: <%= @park.updated_at %></p>

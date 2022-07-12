@@ -1,4 +1,6 @@
 <% @otters.each do |otter| %>
-<p><%= otter.otter_age %></p>
-<p><%= otter.otter_name %></p>
+  <%= link_to otter.otter_name, "/otters/#{otter.id}" %>
+  <%= otter.otter_age %>
 <% end %>
+
+<h1>ksjdfbgkjdfgllo</h1>

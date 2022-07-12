@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-10T13:24:03-06:00">2022-07-10T13:24:03-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-12T15:44:46-06:00">2022-07-12T15:44:46-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  96.97%
+  95.71%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="yellow">
-         1.0
+       <span class="red">
+         0.99
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>20</b> files in total.
+    <b>19</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>66</b> relevant lines,
-    <span class="green"><b>64</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed. </span>
+    <b>70</b> relevant lines,
+    <span class="green"><b>67</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed. </span>
     (<span class="green">
-  96.97%
+  95.71%
 </span>
 )
   </div>
@@ -83,10 +83,10 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#515c8860e20faa66cdac3a3886d2be39c976072a" class="src_link" title="app/controllers/parks_controller.rb">app/controllers/parks_controller.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">80.00 %</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">4</td>
+            <td class="yellow strong cell--number t-file__coverage">88.89 %</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">1</td>
             <td class="cell--number">1.00</td>
             
@@ -115,24 +115,13 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#9381c2904a488cd80cabacb24b9d6f2cbbcfda54" class="src_link" title="app/models/otter.rb">app/models/otter.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
-            
-          </tr>
-        
-          <tr class="t-file">
             <td class="strong t-file__name"><a href="#91b1dd13463c3c1a48e2c6d39db8af7e4561e6f5" class="src_link" title="app/models/park.rb">app/models/park.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">88.89 %</td>
+            <td class="red strong cell--number t-file__coverage">77.78 %</td>
             <td class="cell--number">14</td>
             <td class="cell--number">9</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">0.89</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0.78</td>
             
           </tr>
         
@@ -282,9 +271,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#e7fb24043624e7f9856601598f4d8a844782e661" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">8</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -364,8 +353,8 @@
   <div class="header">
     <h3>app/controllers/parks_controller.rb</h3>
     <h4>
-      <span class="red">
-  80.0%
+      <span class="yellow">
+  88.89%
 </span>
 
       lines covered
@@ -374,8 +363,8 @@
     
 
     <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>9</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
 
@@ -420,8 +409,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="4">
-            
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
             
 
             
@@ -464,8 +453,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="8">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
             
 
             
@@ -497,7 +486,139 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def new</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    Park.create(title: params[:title], hiring_workers: params[:hiring_workers], number_of_workers: params[:number_of_workers])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    redirect_to &#39;/parks&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
             
             
 
@@ -629,87 +750,12 @@
 </div>
 
       
-        <div class="source_table" id="9381c2904a488cd80cabacb24b9d6f2cbbcfda54">
-  <div class="header">
-    <h3>app/models/otter.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class Otter &lt; ApplicationRecord</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  belongs_to :park</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
         <div class="source_table" id="91b1dd13463c3c1a48e2c6d39db8af7e4561e6f5">
   <div class="header">
     <h3>app/models/park.rb</h3>
     <h4>
-      <span class="yellow">
-  88.89%
+      <span class="red">
+  77.78%
 </span>
 
       lines covered
@@ -719,8 +765,8 @@
 
     <div class="t-line-summary">
       <b>9</b> relevant lines.
-      <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
 
     
@@ -852,8 +898,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="12">
+            
             
 
             
@@ -3341,8 +3387,8 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3393,7 +3439,7 @@
 
             
 
-            <code class="ruby">  get &#39;/parks/:id&#39;, to: &#39;parks#show&#39;</code>
+            <code class="ruby">  get &#39;/parks/new&#39;, to: &#39;parks#new&#39;</code>
           </li>
         </div>
       
@@ -3404,7 +3450,7 @@
 
             
 
-            <code class="ruby">  get &#39;/otters&#39;, to: &#39;otters#index&#39;</code>
+            <code class="ruby">  post &#39;/parks&#39;, to: &#39;parks#create&#39;</code>
           </li>
         </div>
       
@@ -3415,7 +3461,7 @@
 
             
 
-            <code class="ruby">  get &#39;/otters/:id&#39;, to: &#39;otters#show&#39;</code>
+            <code class="ruby">  get &#39;/parks/:id&#39;, to: &#39;parks#show&#39;</code>
           </li>
         </div>
       
@@ -3426,12 +3472,34 @@
 
             
 
+            <code class="ruby">  get &#39;/otters&#39;, to: &#39;otters#index&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &#39;/otters/:id&#39;, to: &#39;otters#show&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">  get &#39;/parks/:park_id/otters&#39;, to: &#39;park_otters#index&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 

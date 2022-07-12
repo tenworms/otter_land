@@ -247,10 +247,45 @@
           1,
           1,
           1,
+          1,
+          1,
           null
         ]
       },
       "/Users/andrepedro/turing/2module/week1_project/otter_land/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/andrepedro/turing/2module/week1_project/otter_land/app/controllers/parks_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/andrepedro/turing/2module/week1_project/otter_land/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
@@ -269,7 +304,7 @@
           null,
           null,
           1,
-          1,
+          0,
           null,
           null
         ]
@@ -280,37 +315,8 @@
           1,
           null
         ]
-      },
-      "/Users/andrepedro/turing/2module/week1_project/otter_land/app/controllers/parks_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/andrepedro/turing/2module/week1_project/otter_land/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/andrepedro/turing/2module/week1_project/otter_land/app/models/otter.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1657481043
+    "timestamp": 1657662286
   }
 }
