@@ -67,6 +67,8 @@ RSpec.describe ' the parks show page' do
 
     expect(current_path).to eq("/parks")
   end
+
+  #User Story 10
   it 'displays a link that takes me to parks index' do
     otterkingdom = Park.create!(title: 'Otter Kingdom', hiring_workers: false, number_of_workers: 20)
     buddy = otterkingdom.otters.create!(otter_age: 1, otter_name: "Buddy", able_to_work: false)
@@ -80,4 +82,16 @@ RSpec.describe ' the parks show page' do
 
     expect(current_path).to eq("/parks/#{otterkingdom.id}/otters")
   end
+
+  #User Story 12
+  it 'has link to update park' do
+    otterland = Park.create!(title: 'Otter Land', hiring_workers: true, number_of_workers: 17)
+
+    visit "/parks/#{otterland.id}"
+    expect(page).to have_link('Update Park')
+    click_link 'Update Park'
+    expect(current_path).to eq("/parks/#{otterland.id}/edit")
+  end
+
+
 end

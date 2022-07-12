@@ -11,3 +11,5 @@
 <p>This Park has <%= @park.otters.count %> otters</p>
 <p>Created At: <%= @park.created_at %></p>
 <p>Updated At: <%= @park.updated_at %></p>
+
+<p><%= link_to "Update Park", "/parks/#{@park.id}/edit" %>

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/parks/new', to: 'parks#new'
   post '/parks', to: 'parks#create'
   get '/parks/:id', to: 'parks#show'
+  get '/parks/:id/edit', to: 'parks#edit'
+  patch '/parks/:id', to: 'parks#update'
   get '/otters', to: 'otters#index'
   get '/otters/:id', to: 'otters#show'
   get '/parks/:park_id/otters', to: 'park_otters#index'
