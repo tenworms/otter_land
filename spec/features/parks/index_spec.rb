@@ -64,8 +64,6 @@ RSpec.describe ' Park Index' do
 
     end
 
-    #<% @parks.each_with_index do |park, index|%>
-    #<div id="park_<%=index%>">
-    #  <h3>Title: <%= park.title %> | <a href="/parks/<%="#{park.id}"%>/edit">Edit Park</a> </h3>
+
 
 end
