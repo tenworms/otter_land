@@ -1,7 +1,12 @@
 class ParkOttersController < ApplicationController
   def index
     @park = Park.find(params[:park_id])
-    @otters = @park.otters
+      if params[:sort] == 'alpha'
+        @otters = @park.otters.alphabetical
+      else
+        @otters = @park.otters
+      end
+
   end
 
   def new
