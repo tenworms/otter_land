@@ -26,4 +26,29 @@ RSpec.describe ' the otters show page' do
     expect(page).to_not have_content(tails.able_to_work)
   end
 
+  # User Story 14, Child Update
+
+  # As a visitor
+  # When I visit a Child Show page
+  # Then I see a link to update that Child "Update Child"
+  # When I click the link
+  # I am taken to '/child_table_name/:id/edit' where I see a form to edit the child's attributes:
+  # When I click the button to submit the form "Update Child"
+  # Then a `PATCH` request is sent to '/child_table_name/:id',
+  # the child's data is updated,
+  # and I am redirected to the Child Show page where I see the Child's updated information
+
+
+  it 'has a link to update otter' do
+    otterland = Park.create!(title: 'Otter Land', hiring_workers: true, number_of_workers: 17)
+    buddy = otterland.otters.create!(otter_age: 1, otter_name: "Buddy", able_to_work: false)
+
+    visit "/otters/#{buddy.id}"
+
+    expect(page).to have_link("Update otter")
+
+    click_link "Update otter"
+    expect(current_path).to eq("/otters/#{buddy.id}/edit")
+  end
+
 end

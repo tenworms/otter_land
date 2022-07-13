@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/parks/:id', to: 'parks#show'
   get '/otters', to: 'otters#index'
   get '/otters/:id', to: 'otters#show'
+  get '/otters/:id/edit', to: 'otters#edit'
   get '/parks/:park_id/otters', to: 'park_otters#index'
   get '/parks/:park_id/otters/new', to: 'park_otters#new'
   post '/parks/:park_id/otters', to: 'park_otters#create'

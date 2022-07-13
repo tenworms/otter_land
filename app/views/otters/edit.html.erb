@@ -1,0 +1,10 @@
+<%= form_with url: "/otters/#{@otter.id}", method: :post, local: true do |form| %>
+  <%= form.label :otter_name %>
+  <%= form.text_field :otter_name %>
+  <%= form.label :able_to_work %>
+  <%= form.select :able_to_work, [['yes', true], ['no', false]] %>
+  <%= form.label :otter_age  %>
+  <%= form.number_field :otter_age %>
+  <%= form.submit 'Update otter' %>
+
+<% end %>

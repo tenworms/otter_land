@@ -9,5 +9,9 @@ class OttersController < ApplicationController
     @otter = Otter.find(params[:id])
   end
 
+  def edit
+    @otter = Otter.find(params[:id])
+  end 
+
 
 end
