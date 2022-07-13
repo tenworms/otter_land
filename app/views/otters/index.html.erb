@@ -5,8 +5,9 @@
 <h1>booo</h1>
 
 
-<% @otters.each do |otter|%>
+<% @otters.able_to_work.each do |otter|%>
 <p><%= otter.otter_name %></p>
 <p><%= otter.otter_age %></p>
 <p><%= otter.able_to_work %></p>
+
 <% end %>

@@ -17,6 +17,4 @@ RSpec.describe 'Parks otters index' do
   expect(page).to have_content(mike.otter_name)
   end
 
-
-
 end
