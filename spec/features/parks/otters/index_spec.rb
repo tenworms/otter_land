@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Parks tters index' do
+RSpec.describe 'Parks otters index' do
   #User Story 5, Parent Children Index
 
   #As a visitor
@@ -16,4 +16,7 @@ RSpec.describe 'Parks tters index' do
   expect(page).to have_content(alexis.otter_age)
   expect(page).to have_content(mike.otter_name)
   end
+
+
+
 end
