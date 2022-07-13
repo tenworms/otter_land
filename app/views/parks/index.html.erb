@@ -6,5 +6,7 @@
 <%= link_to 'New Park', '/parks/new' %>
 
 <% @parks.each do |park|%>
-<p><%= park.title %></p>
+  <p id="park-<%= park.id %>"> <%= park.title %> <%= park.created_at %>
+    <%= link_to "Edit", "/parks/#{park.id}/edit" %>
+  </p>
 <% end %>
